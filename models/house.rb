@@ -7,7 +7,7 @@ attr_reader :id
 attr_accessor :name, :url
 
 def initialize( options )
-  @id = options['id'].to_i
+  @id = options['id'].to_i if options['id']
   @name = options['name']
   @url = options['url']
 end
@@ -25,7 +25,7 @@ def self.delete_all()
   SqlRunner.run(sql, values)
 end
 
-def self.find_all()
+def self.all()
   sql = "SELECT * FROM houses"
   values = []
   houses = SqlRunner.run(sql, values)
