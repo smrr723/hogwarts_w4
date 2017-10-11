@@ -1,0 +1,16 @@
+<form action="/students/<%= @student.id %>" method="POST">
+  <label for="firstName">First Name:</label>
+  <input type="text" name="first_name" id="firstName" value="<%= @student.first_name %>">
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="last_name" id="lastName" value="<%= @student.last_name %>">
+  <label for="house">Select a house:</label>
+  <select name="house" id="house>">
+    <option value="Gryfinndor">Gryfinndor</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Slytherin">Slytherin</option>
+    <option value="Ravenclaw">Ravenclaw</option>
+  </select>
+  <label for="age">Age:</label>
+  <input type="number" name="age" id="age">
+  <input type="submit" value="Submit">
+</form>
