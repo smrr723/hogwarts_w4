@@ -12,7 +12,6 @@ house1 = House.new({
   })
 house1.save()
 
-
 house2 = House.new({
   "name" => "Slytherin",
   "url" => "https://i.pinimg.com/originals/1c/fa/07/1cfa0732cbe110a01dc156002fa56f09.jpg"
